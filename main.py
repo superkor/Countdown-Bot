@@ -79,9 +79,6 @@ async def on_message(message):
 
     if message.content.startswith("!help"):
         await message.channel.send("!countdown - how many days till the end of school\n!roll [integer] - gives you a random number\n!info - bruh")
-
-    if message.content.startswith("!bowser"):
-        await message.channel.send("fuck off")
     
     if any(word in message.content for word in bad_words):
         await message.channel.send(message.author.mention+" hey! you can't say that here") 
